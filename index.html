@@ -12,14 +12,31 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <div class="callout callout--primary">
-    <div class="grid grid--1x2">
-      <div class="callout__content">
-        <h2 class="callout__heading">Ready to get started?</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam laudantium nulla deleniti voluptatem nostrum vel facilis dicta doloremque minus error!</p>
-      </div>
-      <a href="" class="btn btn--secondary btn--stretched">Ready to get started?</a>
-    </div>
+  <nav class="nav collapsible collapsible--expanded">
+    <a href="/">
+      <img class="nav__logo" src="/images/logo1.svg" alt="">
+    </a>
+    <svg class="icon icon--white nav__toggler">
+      <use xlink:href="images/sprite.svg#menu"></use>
+    </svg>
+    <ul class="list nav__list collapsible__content">
+      <li class="nav__item"><a href="#">Services</a></li>
+      <li class="nav__item"><a href="#">Gallery</a></li>
+      <li class="nav__item"><a href="#">Pricing</a></li>
+      <li class="nav__item"><a href="#">About</a></li>
+      <li class="nav__item"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+ <section class="block block--dark block--skewed-left hero">
+  <div class="container grid grid--1x2">
+    <header class="block__header hero__content">
+      <h1 class="block__heading">Wedding Moments</h1>
+      <p class="hero__tagline">Capturing special moments that you will remember forever.</p>
+      <a href="" class="btn btn--accent btn--stretched">Let's get started</a>
+    </header>
+    <img class="hero__image" src="/images/wedding.png" alt="">
   </div>
+ </section>
+  <script src="js/main.js"></script>
 </body>
 </html>
